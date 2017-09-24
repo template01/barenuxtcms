@@ -1,17 +1,16 @@
 <template>
 <section class="content-container">
-  <h1 class="post-title"> {{ post.title }} </h1>
-  <nuxtent-body :body="post.body" />
-
-  {{post.image}}
-  <img :src="post.image"/>
+  too
+  {{posts}}
+  {{routedata}}
 </section>
 </template>
 
 <script>
 export default {
   asyncData: async ({ app, route, payload }) => ({
-    post: await app.$content('_post').get(route.path) || payload
+    posts: await app.$content('_post').get(route.path)
+    // routedata: route.params.slug
   })
 }
 </script>

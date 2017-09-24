@@ -1,7 +1,8 @@
 // write your routing/structure here.
 
 const postContentOptions = {
-  permalink: '/posts/:slug',
+  permalink: '/contenta/:slug',
+  page: '/posts',
   generate: [ // for static build
     'get', 'getAll'
   ],
