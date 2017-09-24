@@ -5,7 +5,7 @@ const postContentOptions = {
   generate: [ // for static build
     'get', 'getAll'
   ],
-  page: '',
+  page: '/',
   isPost: false
 }
 
