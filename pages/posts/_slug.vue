@@ -1,8 +1,6 @@
 <template>
 <section class="content-container">
-  too
   {{posts}}
-  {{routedata}}
 </section>
 </template>
 
@@ -10,7 +8,6 @@
 export default {
   asyncData: async ({ app, route, payload }) => ({
     posts: await app.$content('_post').get(route.path)
-    // routedata: route.params.slug
   })
 }
 </script>
